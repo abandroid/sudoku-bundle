@@ -23,6 +23,7 @@ class SudokuController extends Controller
      * @Template()
      *
      * @param string $values
+     *
      * @return array
      */
     public function indexAction($values)
@@ -43,6 +44,7 @@ class SudokuController extends Controller
      * @Route("/state")
      *
      * @param Request $request
+     *
      * @return JsonResponse
      */
     public function stateAction(Request $request)
@@ -65,6 +67,7 @@ class SudokuController extends Controller
      * @Template()
      *
      * @param string $values
+     *
      * @return JsonResponse
      */
     public function solveAction($values)
@@ -77,11 +80,12 @@ class SudokuController extends Controller
 
     /**
      * @param $values
+     *
      * @return Puzzle
      */
     protected function createSudoku($values)
     {
-        if (!is_string($values) || strlen($values) != 81) {
+        if (!is_string($values) || 81 != strlen($values)) {
             $values = str_repeat('0', 81);
         }
 
