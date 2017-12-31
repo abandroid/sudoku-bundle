@@ -2,7 +2,7 @@
     "name": "endroid/sudoku-bundle",
     "description": "Endroid Sudoku Bundle for Symfony",
     "keywords": ["endroid", "sudoku", "bundle", "symfony"],
-    "homepage": "https://github.com/endroid/EndroidSudokuBundle",
+    "homepage": "https://github.com/endroid/sudoku-bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
