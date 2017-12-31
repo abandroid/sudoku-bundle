@@ -7,7 +7,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Endroid\Sudoku\Bundle;
+namespace Endroid\SudokuBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -7,7 +7,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Endroid\Sudoku\Bundle\Controller;
+namespace Endroid\SudokuBundle\Controller;
 
 use Endroid\Sudoku\Puzzle;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
