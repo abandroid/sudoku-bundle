@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\Request;
 class SudokuController extends Controller
 {
     /**
-     * @Route("/{values}", defaults={"values": null}, requirements={"values": "[0-9]*"})
+     * @Route("/{values}", defaults={"values": null}, requirements={"values": "[0-9]*"}, name="sudoku_index")
      * @Template()
      *
      * @param string $values
@@ -41,7 +41,7 @@ class SudokuController extends Controller
     }
 
     /**
-     * @Route("/state")
+     * @Route("/state", name="sudoku_state")
      *
      * @param Request $request
      *
@@ -63,7 +63,7 @@ class SudokuController extends Controller
     }
 
     /**
-     * @Route("/solve")
+     * @Route("/solve", name="sudoku_solve")
      * @Template()
      *
      * @param string $values
