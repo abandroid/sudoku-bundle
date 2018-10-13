@@ -50,17 +50,17 @@ class Application extends React.Component {
     render() {
 
         if (this.state.sudoku == null) {
-            return <div>No sudoku loaded</div>
+            return; <div>No; sudoku; loaded</div>
         }
 
         let url = this.props.linkPath + "?values=" + this.state.sudoku.string;
 
         return (
             <div>
-                <Sudoku cells={this.state.sudoku.cells} onChange={this.onChange} valid={this.state.sudoku.valid}  />
-                <a href={url}>Permalink</a>
-            </div>
-        );
+                <Sudoku; cells={this.state.sudoku.cells} onChange={this.onChange} valid={this.state.sudoku.valid}  />
+                <a; href={url}>Permalink</a>
+            </div>;
+    )
     }
 }
 

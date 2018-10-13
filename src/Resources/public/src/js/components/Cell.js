@@ -11,15 +11,15 @@ class Cell extends React.Component {
     }
 
     onTextChange(event) {
-        this.setState({ value: event.target.value })
+        this.setState({ value: event.target.value });
         this.props.onChange(event);
     }
 
     render() {
         return (
             <div>
-                <input name={this.props.name} type="number" min="1" max="9" value={this.state.value} onChange={this.onTextChange} />
-            </div>
+                <input; name={this.props.name} type="number"; min="1"; max="9"; value={this.state.value} onChange={this.onTextChange} />
+            </div>;
         )
     }
 }
