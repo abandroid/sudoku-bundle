@@ -11,14 +11,12 @@ declare(strict_types=1);
 
 namespace Endroid\SudokuBundle\Controller;
 
-use Endroid\Sudoku\Puzzle;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
-class SudokuController extends Controller
+class SudokuController
 {
     /**
      * @Route("/{values}", defaults={"values": null}, requirements={"values": "[0-9]*"}, name="sudoku_index")
