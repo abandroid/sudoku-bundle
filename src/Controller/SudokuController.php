@@ -43,8 +43,6 @@ class SudokuController
     /**
      * @Route("/state", name="sudoku_state")
      *
-     * @param Request $request
-     *
      * @return JsonResponse
      */
     public function stateAction(Request $request)
